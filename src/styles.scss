@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline-style: none;
+}
+
+:root {
+	--primary: #005AAA;
+	--title: #030303;
+	--background: #FAFAFA;
+}
+
+.btn-primary {
+	height: 45px;
+	border-radius: 8px;
+	background-color: var(--primary);
+	min-width: 100px;
+	color: white;
+	border: none;
+	font-size: 16px;
+}
+
+html, body { height: 100%; }
+
+.container {
+	width: 100%;
+	height: calc(100% - 55px);
+	padding: 16px;
+}
+
+.container-center-all {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background);
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}

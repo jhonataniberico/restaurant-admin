@@ -1,0 +1,34 @@
+<div class="container-center-all" >
+	<form [formGroup]="loginForm" class="login-container" (submit)="login()">
+		<h2>Inicia Sesión</h2>
+		<div class="inputs" >
+			<label>Correo electrónico</label>
+			<input type="email"
+				autocomplete="off"
+				placeholder="email@mail.com"
+				formControlName="email"
+			/>
+			<p *ngIf="loginForm.controls.email.invalid && loginForm.controls.email.touched" >
+				{{showMessage(loginForm.controls.email.errors)}}
+			</p>
+			<label>Contraseña</label>
+			<input type="password" autocomplete="off" placeholder="*********"
+				formControlName="password"
+			/>
+			 <p *ngIf="loginForm.controls.password.invalid && loginForm.controls.password.touched" >
+				la contraseña debe ser mayor o igual de 6 dígitos
+			</p>
+		</div>
+		<!-- <button
+			class="btn-primary"
+			(click)="login()"
+		>Ingresar</button> -->
+<!-- 	con la propieda disabled bindeada -->
+		<button
+			class="btn-primary"
+			type="submit"
+
+
+		>Ingresar</button>
+	</form>
+</div>

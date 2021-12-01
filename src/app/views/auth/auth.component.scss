@@ -1,0 +1,42 @@
+.login-container {
+	width: 70%;
+	min-width: 305px;
+	box-shadow: 0px 0px 3px #0a0a0a8a;
+	border-radius: 4px;
+	min-height: 300px;
+	padding: 16px;
+
+	label{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.inputs {
+		text-align: left;
+
+	}
+
+	h2 {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+	}
+
+	input {
+		// margin-bottom: 18px;
+		padding: 8px;
+		width: 100%;
+	}
+
+	.btn-primary {
+		width: 250px;
+	}
+
+	.btn-primary:disabled {
+		opacity: 0.7;
+		background-color: red;
+	}
+
+	p {
+		margin-top: 0;
+		color: red;
+	}
+}

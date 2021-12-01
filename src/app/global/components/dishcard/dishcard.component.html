@@ -1,0 +1,10 @@
+<div class="dish-card">
+	<img
+		[src]="dish.picture"
+		width="100%"
+		height="105px"
+	/>
+	<p>{{dish.name}}</p>
+	<p>{{dish.price | currency : "S/ "}}</p>
+	<button (click)="onClickHandler()">Pedir</button>
+</div>

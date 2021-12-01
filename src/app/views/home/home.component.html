@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div class="container">
+	<button (click)="createOrder()">{{car.length}} platos guardados</button>
+	<div class="row">
+		<app-dishcard
+			*ngFor="let dish of dishes"
+			[dish]="dish"
+			(orderHandler)="setToCar($event)"
+		></app-dishcard>
+	</div>
+
+	<div>
+		<p *ngFor="let dish of dishes">{{dish.name}}: {{dish.delivered}}</p>
+	</div>
+
+	<table >
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>First name</th>
+				<th>Last name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let dish of dishes">
+				<td>{{dish._id}}</td>
+				<td>{{dish.name}}</td>
+				<td>{{dish.price}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
